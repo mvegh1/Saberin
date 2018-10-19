@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saberin.UI", "Saberin.UI\Saberin.UI.csproj", "{932450ED-A4FE-41D0-83B8-9CCD9B390FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saberin.Data", "Saberin.Data\Saberin.Data.csproj", "{8C5FCF6A-986C-43A9-BD00-AA8CDFE2D95B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{932450ED-A4FE-41D0-83B8-9CCD9B390FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932450ED-A4FE-41D0-83B8-9CCD9B390FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932450ED-A4FE-41D0-83B8-9CCD9B390FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932450ED-A4FE-41D0-83B8-9CCD9B390FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5FCF6A-986C-43A9-BD00-AA8CDFE2D95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5FCF6A-986C-43A9-BD00-AA8CDFE2D95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5FCF6A-986C-43A9-BD00-AA8CDFE2D95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5FCF6A-986C-43A9-BD00-AA8CDFE2D95B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7DA99EB-E35E-4385-BFCF-A197E6E86427}
+	EndGlobalSection
+EndGlobal
