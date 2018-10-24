@@ -60,14 +60,14 @@
             $(`#add-contact`).click(e => {
                 ContactManager.Modal.NewContact.Show();
             });
-            $("#contactmanager-search").click(e => {
+            /*$("#contactmanager-search").click(e => {
                 this.FilterWidget($("#srch-term").val());
-            });
+            });*/
             $("#srch-term").keyup(e => {
                 // enter
-                if (e.which == 13) {
+                //if (e.which == 13) {
                     this.FilterWidget(e.target.value);
-                }
+                //}
             });
         }
         async Refresh() {
