@@ -14,5 +14,8 @@ Instructions to properly run this application!
 
 2) Modify {USER_ID} in the appSettings/add[key="Saberin.Data.ExternalApi.USPS.UserId"] node of Saberin.UI's web.config to your USPS UserId 
 3) Modify {PASSWORD} in the appSettings/add[key="Saberin.Data.ExternalApi.USPS.Password"] node of Saberin.UI's web.config to your USPS Password
+    
+    
     *** A note about the above. You must register access to USPS API at the following link: https://registration.shippingapis.com/
-	*** Password is not required at this time
+    
+    *** Password is not required at this time
