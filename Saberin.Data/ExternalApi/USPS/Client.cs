@@ -62,11 +62,11 @@ namespace Saberin.Data.ExternalApi.USPS
                 {
                     XmlSerializer serializer = new XmlSerializer(typeof(Saberin.Data.ExternalApi.USPS.Response.AddressValidateResponse));
                     var deserialized = (Saberin.Data.ExternalApi.USPS.Response.AddressValidateResponse)serializer.Deserialize(sr);
-                    var rtn = new Saberin.Data.Model.Address();
-                    if(rtn.City == null)
+                    if (deserialized.Address.City == null)
                     {
                         return null;
                     }
+                    var rtn = new Saberin.Data.Model.Address();
                     rtn.AddressId = address.AddressId;
                     rtn.ContactId = address.ContactId;
                     rtn.Contact = address.Contact;
