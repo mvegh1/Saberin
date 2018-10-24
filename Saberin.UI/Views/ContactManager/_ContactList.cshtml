@@ -19,3 +19,7 @@
         </div>
     </div>
 }
+    <script>
+    ContactManager.ContactList.Items = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model, Newtonsoft.Json.Formatting.Indented,
+    new Newtonsoft.Json.JsonSerializerSettings { PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects }));
+    </script>
