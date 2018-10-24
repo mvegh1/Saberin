@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+@model IEnumerable<Saberin.Data.Model.Contact>
+
+@foreach (var contact in Model)
+{
+    <div class="row contactitem" data-id="@contact.ContactId">
+        <button type="button" class="btn btn-info col-xs-12" data-id="@contact.ContactId" data-target="#contact-@contact.ContactId">@contact.FirstName @contact.LastName</button>
+        <div id="contact-@contact.ContactId" class="collapse">
+            <div class="card card-body">
+                <div class="list-group">
+                    @foreach (var address in contact.Address)
+                    {
+                        <div class="address list-group-item">@address.Street @address.City, @address.State  @address.PostalCode</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

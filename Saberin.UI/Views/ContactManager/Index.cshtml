@@ -1,0 +1,7 @@
+﻿@{
+    Layout = "~/Views/ContactManager/_Layout.cshtml";
+}
+@model IEnumerable<Saberin.Data.Model.Contact>
+
+@Html.Partial("_ContactContainer", Model)
+@Html.Partial("_Modal")

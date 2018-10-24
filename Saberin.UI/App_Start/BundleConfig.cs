@@ -25,6 +25,16 @@ namespace Saberin.UI
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/contactmanager").Include(
+                    "~/Scripts/ContactManager/ContactManager.js",
+                    "~/Scripts/ContactManager/Alert.js",
+                    "~/Scripts/ContactManager/Modal/Abstract.js",
+                    "~/Scripts/ContactManager/Modal/AbstractContact.js",
+                    "~/Scripts/ContactManager/Modal/NewContact.js",
+                    "~/Scripts/ContactManager/Modal/EditContact.js",
+                    "~/Scripts/ContactManager/ContactList.js"
+                ));
         }
     }
 }

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+@model Saberin.Data.Model.Contact
+
+<form name="contactmanager-contactform" id="contactmanager-contactform">
+    <input type="hidden" id="contact-contactid" value="@Model.ContactId" />
+    <div class="row">
+        <div class="form-group">
+            <label for="#contact-firstname">First Name</label>
+            <input type="text" class="form-control" id="contact-firstname" placeholder="First Name" value="@Model.FirstName">
+        </div>
+        <div class="form-group">
+            <label for="#contact-lastname">Last Name</label>
+            <input type="text" class="form-control" id="contact-lastname" placeholder="Last Name" value="@Model.LastName">
+        </div>
+    </div>
+
+    <div class="row">
+        <i id="add-address" class="fas fa-plus add-icon"></i>
+    </div>
+    <div id="contact-addresses">
+        @foreach (var address in Model.Address)
+        {
+            Html.RenderPartial("_AddressEditorRow", address);
+        }
+    </div>
+</form>

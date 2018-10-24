@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Saberin.Data.Model.Contact>
+
+<div class="alert alert-success fade alert-hide" role="alert">
+    <div class="message"></div>
+    <button type="button" class="close" data-level="success" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-danger fade alert-hide" role="alert">
+    <div class="message"></div>
+    <button type="button" class="close" data-level="danger" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-warning fade alert-hide" role="alert">
+    <div class="message"></div>
+    <button type="button" class="close" data-level="warning" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="row">
+    <div class="input-group add-on">
+        <input class="form-control" placeholder="Search" id="srch-term" type="text">
+        <div class="input-group-btn">
+            <button id="contactmanager-search" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <i id="add-contact" class="fas fa-plus add-icon"></i>
+</div>
+<div id="contactmanager-contactlist">
+    @Html.Partial("_ContactList", Model)
+</div>
+<script>
+    ContactManager.ContactList.Items = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model, Newtonsoft.Json.Formatting.Indented,
+    new Newtonsoft.Json.JsonSerializerSettings { PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects }));
+</script>
+
